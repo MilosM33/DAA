@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horoskop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="center-screen">
+    <div class="d d-flex">
+
+        <h1>HOROSKOP</h1>
+
+        <div class="horoskop-image-container">
+            <div class="horoskop-image">
+                <img src="images/vodnar.png" alt=" ">
+            </div>
+        </div>
+        <h1 class="horoskop-sign"></h1>
+        <p class="custom-text">
+            
+        </p>
+        <form class="custom-form">
+            <label for="birthday">Dátum narodenia</label>
+            <input type="date" id="birthday" name="birthday">
+            <button class="btn" onclick="changeDateTime(event)"> Potvrď dátum</button>
+        </form>
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

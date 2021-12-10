@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.led {
+    background-color: rgba(255, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.led.active {
+  background-color: red;
+  box-shadow: red 0px 0px 50px 5px;
+}
+.led.hidden{
+    display: none;
+}
+.clock {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.bin {
+  display: flex;
+  justify-content: flex-end;
+}
